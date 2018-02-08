@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoInternetView">
+            <connections>
+                <outlet property="contentView" destination="D2L-0L-bPX" id="49d-gJ-UgE"/>
+                <outlet property="retryButton" destination="l6S-Uh-i5x" id="Vvq-eQ-oxY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="D2L-0L-bPX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrV-rJ-ceS">
+                    <rect key="frame" x="95" y="240" width="185" height="207"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_internet_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-gs-HNW">
+                            <rect key="frame" x="0.0" y="0.0" width="185" height="163"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6S-Uh-i5x">
+                            <rect key="frame" x="36.5" y="171" width="112" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="112" id="ujH-Hm-hxu"/>
+                                <constraint firstAttribute="height" constant="36" id="zj8-cB-VjQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="点击重试">
+                                <color key="titleColor" red="1" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="retryButtonClick:" destination="-1" eventType="touchUpInside" id="zxz-1J-kDI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="l6S-Uh-i5x" firstAttribute="top" secondItem="Sfv-gs-HNW" secondAttribute="bottom" constant="8" id="G70-j6-fRd"/>
+                        <constraint firstItem="Sfv-gs-HNW" firstAttribute="top" secondItem="DrV-rJ-ceS" secondAttribute="top" id="Uw0-B1-lWh"/>
+                        <constraint firstItem="l6S-Uh-i5x" firstAttribute="centerX" secondItem="DrV-rJ-ceS" secondAttribute="centerX" id="bJz-di-D23"/>
+                        <constraint firstAttribute="bottom" secondItem="l6S-Uh-i5x" secondAttribute="bottom" id="eqM-ST-oQC"/>
+                        <constraint firstItem="Sfv-gs-HNW" firstAttribute="leading" secondItem="DrV-rJ-ceS" secondAttribute="leading" id="mVO-M1-B4a"/>
+                        <constraint firstAttribute="trailing" secondItem="Sfv-gs-HNW" secondAttribute="trailing" id="nLH-vI-hOe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DrV-rJ-ceS" firstAttribute="centerY" secondItem="DHZ-yJ-X4L" secondAttribute="centerY" id="YJc-bh-1HU"/>
+                <constraint firstItem="DrV-rJ-ceS" firstAttribute="centerX" secondItem="DHZ-yJ-X4L" secondAttribute="centerX" id="onp-4n-K0u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DHZ-yJ-X4L"/>
+            <point key="canvasLocation" x="-22.5" y="61.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_internet_bg" width="185" height="163"/>
+    </resources>
+</document>
