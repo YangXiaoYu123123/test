@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     
     _mapManager = [[BMKMapManager alloc]init];
-    BOOL ret = [_mapManager start:@"dNQwaAvj9P0TnSvihBGhdPqwVUXqgjcK" generalDelegate:nil];
+    BOOL ret = [_mapManager start:BaiduMAPKey generalDelegate:nil];
     if ( !ret) {
         NSLog(@"manager start failed");
     }

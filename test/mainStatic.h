@@ -124,7 +124,7 @@
 ////////////第三方SDK区分//////////
 #if TARGET == 0//xlzp_pgy
     #define KAPPName @"小劳招聘"
-    #define BaiduMAPKey @"wWPCci1iBVfRluBp5TRi4ihq"//百度地图SDK
+    #define BaiduMAPKey @"dNQwaAvj9P0TnSvihBGhdPqwVUXqgjcK"//百度地图SDK
     #define YouMengAPP_Key @"564d356a67e58e4d69007230" //友盟上应用的key
     #define KWeiboAppKey @"833506188"
     #define KWeiboAPPSecret @"9e8c497057dd3fd790627085775a7a40"
